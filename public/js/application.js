@@ -5,6 +5,7 @@ $(document).ready(function() {
   //   console.log("click");
   // })
 
+
   $(".like").submit(function(e) {
     e.preventDefault();
     var data = $(e.target).serialize();

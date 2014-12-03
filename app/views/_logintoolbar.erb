@@ -1,15 +1,20 @@
 <div id="login-toolbar">
-    <nav>
+
       <% if current_user %>
+      <nav>
         <a href="/user/logout">Logout</a>
         <a href="/user/<%=current_user.id%>">MyProfile</a>
         <a href="/item/all">See all clothes that are up for trade!</a>
         <a href="/user/<%=current_user.id%>/matches">MyMatches</a>
         <a href="/user/all">BrowseUsers</a>
         <a href="/item/new">AddNewItem</a>
+        <%= erb :_search %>
+      </nav>
       <% else %>
+      <nav>
         <a href="/user/login">Login</a>
         ....Not a user yet?  <a href="/user/new">Signup</a>
+        </nav>
       <% end %>
-    </nav>
+
 </div>

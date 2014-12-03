@@ -1,7 +1,7 @@
 <!-- <div class="all_items"> -->
-<%= erb :_logintoolbar %>
+
   <% @items.each do |item| %>
-    <div class='col-md-4' class="item">
+    <div class='col-md-4'>
       <h2><a href="/user/<%= item.user.id %>"><%= item.user.username %></a></h2>
       <br>
       <a href="/item/<%= item.id %>"><img src="/<%=item.photo%>"></a>

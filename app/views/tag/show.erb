@@ -1,0 +1,7 @@
+
+  <br><h2>item CONTAINING: <%= @tag_name %></h2>
+  <br><br><p><% @tag_items.uniq.each do |item| %>
+    <a href="/item/<%= item.id %>"><%= item.description %><br></a>
+    <% end %></p><br>
+
+
