@@ -28,13 +28,21 @@
   background-color: yellow
 }
 
+nav {
+  background-color: #F595D3;
+  padding: 10px 0 0 10px;
+
+}
+
 nav a {
-  background-color:
+  font-size: 18px;
+  padding-right: 20px;
+
 }
 
 p, a, nav, nav a {
   color: #3FAB65;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 
 h1, h2, h3 {
