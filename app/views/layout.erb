@@ -11,6 +11,9 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+
+  <link rel="stylesheet" href="/css/bootstrap.css">
+
   <!-- Load Vollkorn font -->
   <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
 
@@ -22,13 +25,6 @@
 <body>
 <div id="content">
   <header>
-    <a href="/"><img src="/img/zenchinese.png" class="logo"></a>
-    <div id="login-toolbar">
-      <% if current_user %>
-        <a href="/logout">Logout</a>
-      <% else %>
-        <a href="/login">Login</a>
-      <% end %>
   </header>
   <%= yield %>
 </div>

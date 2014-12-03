@@ -1,9 +1,8 @@
-<%= display_errors %>
-<p>hey this is the login page</p>
-
+<p>hey this is the signup page</p>
 <%= erb :_logintoolbar %>
-
-<form action="/user/login" method="POST">
+<form action="/user" method="POST">
+  <h3></h3>
+  <input name="user[email]" type="text" placeholder="email">
   <h3></h3>
   <input name="user[username]" type="text" placeholder="Username">
   <h3></h3>
@@ -11,4 +10,3 @@
   <h3></h3>
   <input class="btn btn-default" type="submit" value="Login">
 </form>
-

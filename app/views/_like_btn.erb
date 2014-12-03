@@ -1,0 +1,12 @@
+<div class="like">
+  <form action="/like" method="post">
+    <input type="hidden" name="item_id" value="<%=item_id%>">
+<%= display_errors %>
+    <br>
+    <%if Like.where(item_id: item_id, user: current_user).count == 0 %>
+      <input type="submit" value="like">
+    <% else %>
+      <input type="submit" value="like" style="background-color: yellow">
+    <% end %>
+  </form>
+</div>

@@ -1,7 +1,22 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  // $(".item").addClass("col-md-"+ $(this).index());
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+    // $(".item").addClass("col-md-");
+
+
+  $(".like").submit(function(e) {
+    e.preventDefault();
+    var data = $(e.target).serialize();
+    $.ajax({
+      type: "POST",
+      url: "/like",
+      data: data,
+      dataType: "JSON"
+    }).done(function(response){
+      $("#item-" + response.item_id).html("likes: "+ response.likes);
+    });
+
+  });
+
+
 });

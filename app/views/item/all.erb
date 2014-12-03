@@ -1,0 +1,13 @@
+<!-- <div class="all_items"> -->
+
+  <% @items.each do |item| %>
+    <div class="col-md-4" class="item">
+      <h2><a href="/user/<%= item.user.id %>"><%= item.user.username %></a></h2>
+      <br>
+      <a href="/item/<%= item.id %>"><img src="/<%=item.photo%>"></a>
+      <%= erb :_likes, :locals => {likes_count: item.likes.count, item_id: item.id}  %>
+      <%= erb :_like_btn, :locals => {item_id: item.id, current_user: @current_user} %>
+    </div>
+  <% end %>
+
+<!-- </div> -->

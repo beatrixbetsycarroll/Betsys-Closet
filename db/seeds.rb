@@ -27,7 +27,7 @@ type_array = (item_types*10).sort
 type_array_copy = type_array.dup
 
 110.times do
-  Item.create(user_id: rand(1..50), photo: "img/#{all_images.pop}", description: "#{type_array_copy.pop}")
+  Item.create(user_id: rand(1..50), photo: "img/#{all_images.pop}", description: "#{type_array_copy.pop}: so awesome much fun very meme so puppy many cutes so awesome much fun very meme so puppy many cutes so awesome much fun very meme so puppy many cutes so awesome much fun very meme so puppy many cutes")
 end
 
 

@@ -1,0 +1,10 @@
+<div id="login-toolbar">
+      <% if current_user %>
+        <a href="/user/logout">Logout</a>
+        <a href="/user/<%=current_user.id%>">MyProfile</a>
+        <a href="/item/all">See all clothes that are up for trade!</a>
+      <% else %>
+        <a href="/user/login">Login</a>
+        ....Not a user yet?  <a href="/user/new">Signup</a>
+      <% end %>
+</div>
