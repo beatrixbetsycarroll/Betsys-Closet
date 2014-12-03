@@ -1,0 +1,5 @@
+<br><h2>All Tags</h2>
+  <br><br>
+  <p><% @all_tags.uniq.each do |tag| %>
+    <a href="/tag/<%= tag.tag %>/show"><%= tag.tag %><br></a>
+  <% end %></p><br>

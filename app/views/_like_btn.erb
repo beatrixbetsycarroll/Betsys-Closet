@@ -6,7 +6,7 @@
     <%if Like.where(item_id: item_id, user: current_user).count == 0 %>
       <input type="submit" value="like">
     <% else %>
-      <input type="submit" value="like" style="background-color: yellow">
+      <input type="submit" value="like" class="like-btn">
     <% end %>
   </form>
 </div>

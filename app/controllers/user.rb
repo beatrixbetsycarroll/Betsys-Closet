@@ -23,6 +23,7 @@ end
 
 post '/user/login' do
   user = User.find_by(username: params[:user][:username]).try(:authenticate, params[:user][:password])
+
   if user
     session[:user_id] = user.id
     redirect("user/#{user.id}")
@@ -41,14 +42,14 @@ end
 #user
 get '/user/:id' do |id|
   @page_owner = User.find(id)
-  if id.to_i == session[:user_id]
-    @items = @page_owner.items
-    erb :'/user/profile'
-  else
+  # if id.to_i == session[:user_id]
+  #   @items = @page_owner.items
+  #   erb :'/user/profile'
+  # else
     @user = User.find(id)
     @items = @user.items
     erb :'/user/show'
-  end
+  # end
 end
 
 

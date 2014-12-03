@@ -1,13 +1,15 @@
-<%= erb :_logintoolbar %>
 
-<h1>These are users whose items you have liked, and who have liked one or more of your items!</h1>
+<h1>These are users who have stuff you like, and who like your stuff!</h1>
 
 
-<p>
-<h2>matches:<h2><br>
 <% @matches.each do |user| %>
-  username: <%= user.username%><br>
-  email: <%= user.email%><br>
+  <a href="/#{<%= user.id%>}" > <%= user.username%> </a>
+  click here to email them to discuss a trade:
+
+  <a href="https://mail.google.com/mail/u/0/?view=cm&ui=2&tf=0&fs=1&to=<%= user.email%>&su=CAN WE TRADE CLOTHES MAYBE&body=LINE1%0ALINE2"><%= user.email%></a>
+  <br>
 <% end %>
-</p>
+
+
+
 

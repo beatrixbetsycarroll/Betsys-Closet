@@ -8,8 +8,10 @@
         <a href="/user/<%=current_user.id%>/matches">MyMatches</a>
         <a href="/user/all">BrowseUsers</a>
         <a href="/item/new">AddNewItem</a>
+        <a href="/tag/all">BrowseAllTags</a>
         <%= erb :_search %>
       </nav>
+      <p>You are logged in as <%= current_user.username%></p>
       <% else %>
       <nav>
         <a href="/user/login">Login</a>

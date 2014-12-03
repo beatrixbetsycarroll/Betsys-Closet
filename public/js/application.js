@@ -17,7 +17,6 @@ $(document).ready(function() {
     }).done(function(response){
       $("#item-" + response.item_id).html("likes: "+ response.likes);
     });
-
   });
 
 

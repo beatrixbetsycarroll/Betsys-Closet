@@ -1,4 +1,44 @@
-.item, img {
-  max-width: 100px ;
-  max-height: 100px ;
+#item {
+  background-color: #93FAB7;
+  width: 90% ;
+  height: 50% ;
+  border: 2px solid red;
+  margin-bottom: 30px;
+  float:left;
+  position:relative;
+  border:1px solid #3FAB65;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 20px;
 }
+
+#item, img {
+  border:1px solid #;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  max-height: 70%;
+  max-width: 90%;
+  display:inline-block;
+  margin: 10%;
+}
+
+.like-btn {
+  background-color: yellow
+}
+
+nav a {
+  background-color:
+}
+
+p, a, nav, nav a {
+  color: #3FAB65;
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  color: #AB3F85 !important;
+}
+
+

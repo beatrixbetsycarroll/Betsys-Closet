@@ -31,6 +31,7 @@ end
 get '/item/:id' do
   if session[:user_id]
     @item = Item.find(params[:id])
+    @all_tags = @item.tags
     @user = @item.user
     erb :'/item/show'
   else
