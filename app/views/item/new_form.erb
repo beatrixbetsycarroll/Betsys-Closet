@@ -1,12 +1,13 @@
-<%= display_error %>
+<%= display_errors %>
 
 <form action="/item" method="POST">
-Title:<br>
-<input name="entry[title]" type="text"><br>
-Content:<br>
-<textarea name="entry[content]"></textarea><br>
+Photo URL:<br>
+<input name="item[photo]" type="text" placeholder="the url of the image"><br>
+Description:<br>
+<textarea name="item[description]" placeholder="describe the piece you want to trade! sell it baby."></textarea><br>
 Tags:<br>
-<input name="tag[tag]" type="text"><br>
-<input type="submit" value="tru">
+<input name="tag[tag]" type="text" placeholder="tags"><br>
+<input type="submit" value="trade up!">
 </form>
+
 </div>
