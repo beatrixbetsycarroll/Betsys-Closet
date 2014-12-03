@@ -50,3 +50,10 @@ get '/user/:id' do |id|
     erb :'/user/show'
   end
 end
+
+
+
+
+
+
+

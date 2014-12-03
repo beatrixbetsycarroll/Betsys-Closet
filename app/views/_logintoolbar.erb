@@ -3,6 +3,8 @@
         <a href="/user/logout">Logout</a>
         <a href="/user/<%=current_user.id%>">MyProfile</a>
         <a href="/item/all">See all clothes that are up for trade!</a>
+        <a href="/user/<%=current_user.id%>/matches">MyMatches</a>
+        <a href="/user/all">BrowseUsers</a>
       <% else %>
         <a href="/user/login">Login</a>
         ....Not a user yet?  <a href="/user/new">Signup</a>

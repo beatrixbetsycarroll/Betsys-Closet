@@ -1,8 +1,9 @@
 $(document).ready(function() {
   // $(".item").addClass("col-md-"+ $(this).index());
 
-    // $(".item").addClass("col-md-");
-
+  // $("img").on('click', function() {
+  //   console.log("click");
+  // })
 
   $(".like").submit(function(e) {
     e.preventDefault();

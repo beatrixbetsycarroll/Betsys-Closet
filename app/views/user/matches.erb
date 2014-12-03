@@ -1,0 +1,61 @@
+<%= erb :_logintoolbar %>
+
+<h1>These are users whose items you have liked, and who have liked one or more of your items!</h1>
+
+<p>
+items_i_like:<br>
+<% @items_i_like.each do |item| %>
+  item_id: <%= item.id%><br>
+  item.user_id: <%= item.user_id%><br>
+<% end %>
+</p>
+
+<p>
+users_i_like:<br>
+<% @users_i_like.each do |user| %>
+  user_id: <%= user.id%><br>
+  username: <%= user.username%><br>
+<% end %>
+</p>
+
+<p>
+likes_on_my_items:<br>
+<% @likes_on_my_items.each do |like| %>
+  like_id: <%= like.id%><br>
+  like.item_id: <%= like.item_id%><br>
+  like.user_id: <%= like.user_id%><br>
+  like.item.user_id: <%= like.item.user_id%><br>
+<% end %>
+</p>
+
+<p>
+my_items_that_users_like:<br>
+<% @my_items_that_users_like.each do |item| %>
+  item: <%= item.id%><br>
+  item.user_id: <%= item.user_id%><br>
+<% end %>
+</p>
+
+<p>
+users_who_like_me:<br>
+<% @users_who_like_me.each do |user| %>
+  user: <%= user.id%><br>
+  user.username: <%= user.username%><br>
+<% end %>
+</p>
+
+<p>
+users_i_like:<br>
+<% @users_i_like.each do |user| %>
+  user: <%= user.id%><br>
+  user.username: <%= user.username%><br>
+<% end %>
+</p>
+
+<p>
+matches:<br>
+<% @matches.each do |user| %>
+  user: <%= user.id%><br>
+  user.username: <%= user.username%><br>
+<% end %>
+</p>
