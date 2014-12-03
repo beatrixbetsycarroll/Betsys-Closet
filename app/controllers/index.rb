@@ -6,7 +6,7 @@ get '/' do
   end
 end
 
-get '/user' do
+get '/user/' do
  "hellow worl"
 end
 
